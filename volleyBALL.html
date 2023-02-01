@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voleyball</title>
+    <link href="voleyball.css" rel="stylesheet">
+</head>
+<body>
+    <table border="1">
+        <tr>
+           <tb>team 1</tb>
+           <td></td>
+           <td></td>
+           <tb>team 2</tb>  
+        </tr>
+        <tr>
+            <td><button id="A1" onclick="attack()">А</button></td>
+            <td rowspan="3">
+                <table>
+                    <tr>
+                        <td>5</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+                </td>
+                <td rowspan="3">
+                    <table>
+                        <tr>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </td>
+            <td><button id="A2" onclick="attack()">А</button></td>
+        </tr>
+        <tr><td><button id="B1"onclick="block()">Б</button></td>
+            <td><button id="B2"onclick="block()">Б</button></td>
+        </tr>
+            <tr><td><button id="S1" onclick="start()">П</button></td>
+            <td><button id="S2" onclick="start()">П</button></td>
+        </tr>
+            <td><button id="E1" onclick="error()">О</button></td>
+            <td id="team_1_score">0</td>
+            <td id="team_2_score">0</td>
+            <td><button onclick="error()">О</button></td>
+        </tr>     
+            <tr><td><button id="C1" onclick="change()">З</button></td>
+            <td id="team_1_global_score">0</td>
+            <td id="team_2_global_score">0</td>
+            <td><button id="C2" onclick="change()">З</button></td>
+        </tr> 
+    </table>
+    <script>
+        let team_1_numbers = [1, 2, 3, 4, 5, 6]
+        let team_2_numbers = [1, 2, 3, 4, 5, 6]
+        let team_1_position = ["team_1_pos_1","team_1_pos_2","team_1_pos_3","team_1_pos_4","team_1_pos_5","team_1_pos_6"]
+        let team_2_position = ["team_2_pos_1","team_2_pos_2","team_2_pos_3","team_2_pos_4","team_2_pos_5","team_2_pos_6"]
+        let team_1_score = 0 
+        let team_2_score = 0 
+        let team_1_global_score = 0 
+        let team_2_global_score = 0
+        function attack(){
+            alert('Укажите номер атакующего')
+        } 
+    </script>
+</body>
+</html>
